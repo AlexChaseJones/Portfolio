@@ -9,11 +9,6 @@ body {
 .container {
 	width: 960px;
 	margin:0 auto;
-	padding:0px;
-}
-
-.clearfix {
-	clear:both;
 }
 /*Header*/
 
@@ -38,8 +33,6 @@ body {
 	padding: 20px 25px;
 	font-size: 1.3em;
 	font-weight: bold;
-
-
 }
 
 .header ul {
@@ -116,6 +109,36 @@ body {
 	border:1px solid #cccccc;
 }
 
+/*end Contact specific*/
+
+/*Portfolio specific*/
+
+.main .images {
+	text-align: center;
+	margin:0 auto;
+	float: none;
+}
+
+.images img {
+	float: none;
+	overflow: auto;
+}
+
+.main table {
+	margin: 0 auto;
+}
+.main table p {
+	text-align: center;
+}
+
+p {
+	border: 1px solid black;
+	width: 100px;
+	position: absolute;
+}
+
+/*end Portfolio specific
+*/
 .main #submit {
 	color:white;
 	font-size: .8em;
