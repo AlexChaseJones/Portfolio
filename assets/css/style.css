@@ -45,6 +45,8 @@ body {
 	font-size: .8em;
 	padding:24px 15px;
 	color:#777777;
+	transition: background-color .3s;
+	-webkit-transition: background-color: .3s;
 }
 
 .header ul a li:hover {
@@ -109,36 +111,6 @@ body {
 	border:1px solid #cccccc;
 }
 
-/*end Contact specific*/
-
-/*Portfolio specific*/
-
-.main .images {
-	text-align: center;
-	margin:0 auto;
-	float: none;
-}
-
-.images img {
-	float: none;
-	overflow: auto;
-}
-
-.main table {
-	margin: 0 auto;
-}
-.main table p {
-	text-align: center;
-}
-
-p {
-	border: 1px solid black;
-	width: 100px;
-	position: absolute;
-}
-
-/*end Portfolio specific
-*/
 .main #submit {
 	color:white;
 	font-size: .8em;
@@ -150,6 +122,47 @@ p {
 	border: none;
 
 }
+/*end Contact specific*/
+
+/*Portfolio specific*/
+
+.main table img {
+	height:150px;
+	width:150px;
+	float:none;
+	margin: 10px;
+	padding:0px;
+}
+
+.main table {
+	margin: 0 auto;
+	position:relative;
+}
+
+.main table td {
+	position: relative;
+}
+
+.main table p {
+	text-align: center;
+	width: 150px;
+	position: absolute;
+	top:100px;
+	background-color: rgba(74, 170, 165, 0.8);
+	color: white;
+	padding: 5px 0px;
+	margin-left: 10px;
+	-webkit-transition: padding .3s, font-size .3s, background-color .3s;
+	transition: padding .3s, font-size .3s, background-color .3s;;
+}
+
+.main table a:hover p {
+	font-size: 1.1em;
+	padding:18px 0px;
+	background-color: rgba(74, 170, 165, 1.0);
+}
+/*end Portfolio specific*/
+
 /*Side*/
 
 .side {
