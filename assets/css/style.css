@@ -59,6 +59,7 @@ body {
 	float:right;
 	font-size: .8em;
 	padding:24px 15px;
+	margin-left:4px;
 	color:#777777;
 	border-top-right-radius: 10px;
 	border-top-left-radius: 10px;
@@ -67,12 +68,11 @@ body {
 }
 
 .header ul a li:hover {
-	color:white;
-	background-color: #4aaaa5;
+	background-color: #b3dedc;
 }
 
 .header .active {
-	background-color: #38817d !important;
+	background-color: #4aaaa5 !important;
 	color: white;
 }
 
@@ -86,7 +86,7 @@ body {
 	background-color: rgba(255,255,255,0.85);
 	border:1px solid #dddddd;
 	padding:25px 25px;
-	box-shadow: 0px 0px 15px 0px #b3b3b3;
+	box-shadow: 0px 0px 15px 0px #ccc;
 	-webkit-transition:box-shadow 2s;
 	transition:box-shadow 2s;
 }
@@ -109,13 +109,13 @@ body {
 	width:150px;
 	float:left;
 	margin: 15px 20px 0px 0px;
-	box-shadow: 0px 0px 20px 3px gray;
-	-webkit-transition:box-shadow 1s;
-	transition:box-shadow 1s;
+	box-shadow: 0px 0px 20px 2px gray;
+	-webkit-transition:box-shadow .7s;
+	transition:box-shadow .7s;
 }
 
 .main > img:hover {
-	box-shadow: 0px 0px 0px 3px #4aaaa5;
+	box-shadow: 0px 0px 0px 2px gray;
 }
 .main p {
 	padding-top: 5px;
@@ -147,6 +147,7 @@ body {
 	line-height: 150%;
 	padding:3px 5px;
 	border: 1px solid #cccccc;
+	border-radius: 5px 5px;
 }
 
 .main textarea {
@@ -154,7 +155,9 @@ body {
 	max-width: 600px;
 	line-height: 150%;
 	padding:3px 5px;
-	border:1px solid #cccccc;	
+	border:1px solid #cccccc;
+	border-radius: 5px 5px;
+	resize:none;	
 }
 
 .main #submit {
@@ -255,9 +258,9 @@ textarea:focus {
 	padding:20px 0px;
 	background-color:  rgba(255,255,255,0.85);
 	border:1px solid #dddddd;
-	box-shadow: 0px 0px 15px 0px #b3b3b3;
-	-webkit-transition:box-shadow 1s;
-	transition:box-shadow 1s;
+	box-shadow: 0px 0px 15px 0px #ccc;
+	-webkit-transition:box-shadow 1.5s;
+	transition:box-shadow 1.5s;
 }
 
 .side:hover {
@@ -291,16 +294,15 @@ textarea:focus {
 	height:70px;
 	width:70px;
 	margin:0 auto;
-	position:;
 }
 
 .side img {
 	height: 60px;
 	width: 60px;
 	padding:2px;
-	box-shadow: 0px 0px 10px 2px #cccccc;
-	-webkit-transition:box-shadow .1s;
-	transition:box-shadow .1s;
+	box-shadow: 0px 0px 10px 1px #ccc;
+	-webkit-transition:box-shadow .3s;
+	transition:box-shadow .3s;
 }
 
 .side li:hover img {
