@@ -9,6 +9,15 @@ body {
 	height: 100%;
 }
 
+body .main, body .side {
+	box-shadow: none;
+}
+
+body:hover .main, body:hover .side {
+	box-shadow: none;
+	box-shadow: 0px 0px 15px 0px #ccc;
+}
+
 .container {
 	width: 960px;
 	margin:0 auto;
@@ -68,7 +77,7 @@ body {
 }
 
 .header ul a li:hover {
-	background-color: #b3dedc;
+	background-color: #ccc;
 }
 
 .header .active {
@@ -87,12 +96,12 @@ body {
 	border:1px solid #dddddd;
 	padding:25px 25px;
 	box-shadow: 0px 0px 15px 0px #ccc;
-	-webkit-transition:box-shadow 2s;
-	transition:box-shadow 2s;
+	-webkit-transition:box-shadow 1.5s;
+	transition:box-shadow 1.5s;
 }
 
 .main:hover {
-	box-shadow: none;
+	box-shadow: none !important;
 }
 .main h1 {
 	color: #4aaaa5;
@@ -108,7 +117,7 @@ body {
 	height:150px;
 	width:150px;
 	float:left;
-	margin: 15px 20px 0px 0px;
+	margin: 15px 20px 00px 0px;
 	box-shadow: 0px 0px 20px 2px gray;
 	-webkit-transition:box-shadow .7s;
 	transition:box-shadow .7s;
@@ -131,6 +140,7 @@ body {
 
 .main p a:hover {
 	text-decoration: underline;
+	color: #4aaaa5;
 }
 /*end Index specific*/
 
@@ -187,8 +197,8 @@ textarea:focus {
 /*Portfolio specific*/
 
 .main table img {
-	height:150px;
-	width:150px;
+	height:180px;
+	width:180px;
 	float:none;
 	margin: 10px;
 	padding:0px;
@@ -207,9 +217,9 @@ textarea:focus {
 .main table p {
 	text-align: center;
 	font-size: 0.9em;
-	width: 150px;
+	width: 180px;
 	position: absolute;
-	top:100px;
+	top:120px;
 	background-color: rgba(74, 170, 165, 0.6);
 	color: white;
 	padding: 5px 0px -35px 0px;
@@ -219,8 +229,8 @@ textarea:focus {
 }
 
 .main table a:hover p {
-	font-size: 1.1em;
-	padding:18px 0px;
+	font-size: 1.2em;
+	padding:16px 0px;
 	background-color: rgba(74, 170, 165, 1.0);
 	box-shadow: 0px 0px 100px 3px black inset;
 	letter-spacing: 2px;
@@ -233,7 +243,7 @@ textarea:focus {
 .main .date {
 	visibility: hidden;
 	position:absolute;
-	right:-55px;
+	right:-35px;
 	top: 45px;
 	color: rgba(74,170,165,0);
 	-webkit-transition: color 4s, right 1s;
@@ -264,7 +274,7 @@ textarea:focus {
 }
 
 .side:hover {
-	box-shadow: none;
+	box-shadow: none !important;
 }
 
 .sidecontent {
