@@ -60,10 +60,6 @@ body:hover .main, body:hover .side {
 
 }
 
-.header ul {
-	margin: 0px 0px 0px 25px;
-}
-
 .header ul li {
 	float:right;
 	font-size: .8em;
@@ -117,7 +113,7 @@ body:hover .main, body:hover .side {
 	height:150px;
 	width:150px;
 	float:left;
-	margin: 15px 20px 00px 0px;
+	margin: 15px 20px 0px 0px;
 	box-shadow: 0px 0px 20px 2px gray;
 	-webkit-transition:box-shadow .7s;
 	transition:box-shadow .7s;
@@ -153,7 +149,7 @@ body:hover .main, body:hover .side {
 }
 
 .main input {
-	width:600px;
+	width:98%;
 	line-height: 150%;
 	padding:3px 5px;
 	border: 1px solid #cccccc;
@@ -161,7 +157,7 @@ body:hover .main, body:hover .side {
 }
 
 .main textarea {
-	width:600px;
+	width:98%;
 	max-width: 600px;
 	line-height: 150%;
 	padding:3px 5px;
@@ -195,68 +191,60 @@ textarea:focus {
 /*end Contact specific*/
 
 /*Portfolio specific*/
-
-.main table img {
-	height:180px;
-	width:180px;
-	float:none;
-	margin: 10px;
+.main img {
+	height:183px;
+	width:183px;
+	float:left;
 	padding:0px;
+	z-index: 3;
 }
 
-.main table {
-	margin: 0 auto;
-	position:relative;
-}
-
-.main table td {
+.imgContainer {
+	height:183px;
+	width: 183px;
+	float:left;
+	padding: 10px;
 	position: relative;
-	max-height: 75px;
 }
 
-.main table p {
+.imgContainer p {
+	padding: 5px 0px;
 	text-align: center;
-	font-size: 0.9em;
-	width: 180px;
 	position: absolute;
+	width:183px;
+	z-index: 1;
 	top:120px;
+	right:10px;
 	background-color: rgba(74, 170, 165, 0.6);
 	color: white;
-	padding: 5px 0px -35px 0px;
-	margin-left: 10px;
 	-webkit-transition: padding .3s, font-size .3s, background-color .3s, box-shadow .4s, letter-spacing 6s, color 3s;
 	transition: padding .3s, font-size .3s, background-color .3s, box-shadow .4s, letter-spacing: 6s, color 3s;
 }
 
-.main table a:hover p {
-	font-size: 1.2em;
-	padding:16px 0px;
+.imgContainer:hover p {
+	padding:18px 0px;
+	box-shadow: 0px 0px 100px 10px black inset;
 	background-color: rgba(74, 170, 165, 1.0);
-	box-shadow: 0px 0px 100px 3px black inset;
-	letter-spacing: 2px;
+	font-size: 1.2em;
+	letter-spacing: 3px;
 }
 
-.main table a:active .project {
-	color: rgba(255,255,255,.7);
-}
-
-.main .date {
-	visibility: hidden;
+.date {
 	position:absolute;
-	right:-35px;
-	top: 45px;
-	color: rgba(74,170,165,0);
-	-webkit-transition: color 4s, right 1s;
-	transition: color 4s, right 1s;
+	left: 135px;
+	bottom:-7px;
+	color: rgba(255,255,255,0);
+	font-size: .0em;
+	-webkit-transition: color .3s, font-size .3s;
+	transition: color .3s, font-size .3s;
 }
 
-.main table a:hover .date {
-	color: rgba(255,255,255,.8);
-	visibility: visible;
-	letter-spacing: 0px;
-	font-size: .3em;
-	right:10px;
+.imgContainer:hover .date {
+		color: rgba(255,255,255,1);
+		font-size: .5em;
+		letter-spacing: 0px
 }
+
 /*end Portfolio specific*/
 
 /*Side*/
@@ -342,5 +330,189 @@ textarea:focus {
 	clear: both;
 	height: 91px;
 }
+
+/*Media Queries*/
+
+@media screen and (max-width: 980px) {
+	.container {
+		width:740px;
+	}
+
+	.main {
+		width:420px;
+		text-align: center;
+		padding:25px 25px;
+	}
+
+	.main h1 {
+		text-align: left;
+	}
+
+	.main > img {
+		width:400px;
+		height:400px;
+		float: none;
+		text-align: center;
+		margin: 10px 0px 20px;
+
+	}
+
+	.side {
+		width: 240px;
+	}
+
+	.portfolio {
+		padding:0px 0px 0px 10px;
+
+}
+
+@media screen and (max-width: 768px) {
+	.container {
+		width:620px;
+	}
+
+	.main {
+		width:580px;
+	}
+
+	.main > img {
+		float:left;
+		height: 230px;
+		width: 230px;
+		margin: 15px 20px 0px 0px;
+	}
+
+	.side {
+		width: 620px;
+		margin-top: 0px;
+	}
+
+
+	.side h2 {
+		padding: 0px 190px 20px 190px;
+
+	}
+
+	.portfolio {
+		padding:0px 87px;
+		overflow: auto;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.container {
+		width: 600px;
+	}
+
+	.header > .container {
+		width: 600px;
+	}
+
+	.main {
+		width: 92%;
+	}
+
+	.main > img {
+		width: 550px;
+		height:550px;
+	}
+
+	.main p {
+		font-size: 1.3em;
+	}
+
+	.header h1 {
+		float:none;
+		font-size: 2.0em;
+		text-align: center;
+		padding: 30px 25px 30px 25px;
+		border-top-right-radius: 0px;
+		border-top-left-radius: 0px;
+	}
+
+	.main h1 {
+		font-size: 1.8em;
+	}
+
+	.side h2 {
+		font-size: 1.5em;
+	}
+
+	.header ul {
+		text-align: center;
+	}
+	.header ul li {
+		float:none;
+		display: inline-block;
+		width:167px;
+		height:15px;
+		margin: none;
+		border-top-right-radius: 0px;
+		border-top-left-radius: 0px;
+		margin-left:0px;
+		font-size: 1.2em;
+	}
+
+	.side {
+		width: 100%;
+		margin-top: 0px;
+	}
+
+	.side img {
+	height: 120px;
+	width: 120px;
+	}
+
+	.side ul li {
+		height: 120px;
+		width: 120px;
+		padding:0px 20px;
+	}
+	.side ul {
+	width:600px;
+	height: 125px
+	}
+
+	.main label p {
+	font-size: 1.8em;
+	padding: 18px 0px;
+	}
+
+	.main input {
+		font-size: 1.5em;
+	}
+
+	.main textarea {
+		font-size: 1.3em;
+	}
+	.main #submit {
+	font-size: 2.3em;
+	width: 400px;
+	padding:25px 20px;
+	margin-top:20px;
+	}
+
+		.portfolio {
+		padding:0px 0px;
+	}
+	.imgContainer {
+		width: 530px;
+	}
+
+	.imgContainer img {
+		width: 530px;
+	}
+
+
+	.imgContainer p {
+		width:530px;
+	}
+
+	.date {
+		position:absolute;
+		left: 435px;
+		bottom:-7px;	
+
+
 
 
