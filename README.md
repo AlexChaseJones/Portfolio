@@ -8,4 +8,4 @@
 
 **Most Proud of:** I'm proud of the animations I added to my portfolio page, such as the various hover reactions. I also really like how the site looks all together!
 
-## View at [here](http://morning-inlet-62701.herokuapp.com/)
+## View it [Here](http://morning-inlet-62701.herokuapp.com/)
